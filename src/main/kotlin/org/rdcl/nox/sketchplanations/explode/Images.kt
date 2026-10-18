@@ -17,7 +17,7 @@ public enum class Rendition(internal val params: Map<String, String>) {
     Hd(mapOf("w" to "2400")),
 }
 
-/** Pure URL building — no network. */
+/** Pure URL building with no network access. */
 public object Images {
     /**
      * The URL for [image] at [rendition]. Animated GIFs come back untouched: imgix's format

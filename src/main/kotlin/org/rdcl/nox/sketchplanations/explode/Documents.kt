@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter
 
 /**
  * Turns Prismic documents into domain models. Nothing Prismic-shaped leaves this file. Parsing is
- * forgiving: a malformed block is skipped, a missing optional field is null — a missing paragraph
+ * forgiving: a malformed block is skipped, a missing optional field is null. A missing paragraph
  * beats a crash.
  */
 internal object Documents {

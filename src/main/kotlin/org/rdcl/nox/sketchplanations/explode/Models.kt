@@ -52,7 +52,7 @@ public data class SketchImage(
     val width: Int?,
     val height: Int?,
 ) {
-    /** The untouched upload — what the site's own high-resolution download serves. */
+    /** The untouched upload, which is what the site's own high-resolution download serves. */
     val original: String get() = url.substringBefore('?')
     /** Animated GIFs must be fetched as-is: format conversion flattens them to one frame. */
     val isAnimated: Boolean get() = original.lowercase().endsWith(".gif")

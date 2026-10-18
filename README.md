@@ -32,18 +32,18 @@ Numbering.ordinals(sketches)               // uid → #n in publication order
 | `versions` | alternate renderings the post links to: metric, US English, the original… |
 | `Episode` | season and number (numbers restart each season), audio URL and size, artwork, notes, chapters, and the sketch it discusses |
 
-## Things the data taught us
+## Notes on the data (from a full fetch in October 2026)
 
-- **Most posts are edited after they go out**, so refresh by last-publication date, not only new arrivals.
-- **There is no sketch number.** About one image filename in five carries the author's `SP<n>`; the only
+- **865 of 990 posts were edited after they first went out**, so refresh by last-publication date, not only new arrivals.
+- **There is no sketch number.** 209 of 990 image filenames carry the author's `SP<n>`; the only
   complete sequence is publication order.
-- **Animated GIFs** must be fetched untouched; imgix's format conversion flattens them to one frame.
+- **Animated GIFs** (7 sketches) must be fetched untouched; imgix's format conversion flattens them to one frame.
   `Images.url` does this for you.
-- **Podcast chapters** live in the show notes and only some episodes have them. Ads are stitched in per
+- **Podcast chapters** live in the show notes, and 34 of 77 episodes have them. Ads are stitched in per
   request, so check `Episode.chaptersFor(actualSeconds)` against the audio you actually downloaded.
 - **Book links** to Amazon and geni.us are affiliate links; `Links.isAffiliate` tells you which to badge.
 
-## Being polite
+## Request behaviour
 
 Requests go out one at a time, carry your User-Agent, back off on 429 and 5xx, and reuse the Prismic ref
 until it expires. A full archive fetch is about ten requests. Please keep it that way: fetch once, store

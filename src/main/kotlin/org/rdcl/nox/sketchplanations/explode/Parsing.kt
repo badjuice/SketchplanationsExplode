@@ -3,7 +3,7 @@ package org.rdcl.nox.sketchplanations.explode
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 
-/** Offline parsing of stored source data — no network. */
+/** Offline parsing of stored source data, with no network access. */
 public object Sketches {
     /** Rebuilds a [Sketch] from [Sketch.raw]. Returns null if [raw] isn't a sketch document. */
     public fun parse(raw: String): Sketch? =

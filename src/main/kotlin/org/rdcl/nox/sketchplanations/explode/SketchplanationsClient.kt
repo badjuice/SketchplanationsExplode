@@ -44,7 +44,7 @@ public class SketchplanationsClient(
     // ---- sketches ---------------------------------------------------------------------------
 
     /**
-     * Every sketch, newest first, bodies included — about ten requests for the whole archive.
+     * Every sketch, newest first, bodies included. About ten requests fetch the whole archive.
      * [progress] receives (fetched, total) after each page.
      */
     public suspend fun allSketches(progress: (Int, Int) -> Unit = { _, _ -> }): List<Sketch> =
@@ -52,7 +52,7 @@ public class SketchplanationsClient(
             .mapNotNull(Documents::sketch)
 
     /**
-     * Sketches published *or edited* after [since] — most posts get edited after they go out, so
+     * Sketches published *or edited* after [since]. Most posts get edited after they go out, so
      * an incremental refresh must look at edit dates, not just new arrivals.
      */
     public suspend fun sketchesChangedSince(since: Instant): List<Sketch> =

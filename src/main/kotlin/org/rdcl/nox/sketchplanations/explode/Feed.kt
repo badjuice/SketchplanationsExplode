@@ -63,7 +63,7 @@ internal object Feed {
     private fun sketchUid(link: String): String? = (Links.classify(link) as? LinkTarget.Sketch)?.uid
         ?.takeIf { runCatching { URI(link).host }.getOrNull()?.removePrefix("www.") == "sketchplanations.com" }
 
-    private val chapterLine = Regex("""^\s*[(\[]?(?:(\d{1,2}):)?(\d{1,2}):(\d{2})[)\]]?\s*[-–—:]?\s*(.+)$""")
+    private val chapterLine = Regex("""^\s*[(\[]?(?:(\d{1,2}):)?(\d{1,2}):(\d{2})[)\]]?\s*[-\u2013\u2014:]?\s*(.+)$""")
 
     /**
      * Timestamps written into the show notes, one per line. Fewer than two hits isn't a chapter
