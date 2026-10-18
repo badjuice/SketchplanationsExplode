@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.rdcl.nox"
-version = "0.1.0"
+version = "0.2.0"
 
 // Java 17 bytecode, so the library runs on Android and on any current JVM.
 kotlin {
