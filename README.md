@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/logo.png" width="320" alt="SketchplanationsExplode logo"></p>
+
 # SketchplanationsExplode
 
 A small Kotlin library for reading [sketchplanations.com](https://sketchplanations.com) and its podcast:
