@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "org.rdcl.nox"
-version = "0.2.0"
+version = "0.2.1"
 
 // Java 17 bytecode, so the library runs on Android and on any current JVM.
 kotlin {
@@ -19,7 +19,8 @@ java {
 dependencies {
     api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    // OkHttpClient and HttpUrl appear in SketchplanationsClient's constructor.
+    api("com.squareup.okhttp3:okhttp:4.12.0")
 
     testImplementation(kotlin("test"))
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
