@@ -3,6 +3,16 @@
 Generated from the commit history by [git-cliff](https://git-cliff.org). Versions follow
 [Semantic Versioning](https://semver.org). Library for reading sketchplanations.com content.
 
+## 0.2.0 — 2026-10-18
+
+### Added
+
+- Keep each sketch's source document for offline re-parsing (c58c538)
+
+### Maintenance
+
+- Version 0.2.0 (08bb832)
+
 ## 0.1.0 — 2026-10-18
 
 ### Added
