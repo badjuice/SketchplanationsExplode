@@ -3,6 +3,12 @@
 Generated from the commit history by [git-cliff](https://git-cliff.org). Versions follow
 [Semantic Versioning](https://semver.org). Library for reading sketchplanations.com content.
 
+## 0.2.1 — 2026-10-18
+
+### Fixed
+
+- **build:** Expose OkHttp to consumers (bc1a904)
+
 ## 0.2.0 — 2026-10-18
 
 ### Added
