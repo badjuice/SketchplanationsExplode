@@ -50,6 +50,7 @@ internal object Documents {
                 .distinctBy { it.url },
             podcastUrl = data.str("podcast_link_url")?.takeIf { it.isNotBlank() },
             printsUrl = data.str("redbubble_link_url")?.takeIf { it.isNotBlank() },
+            raw = doc.toString(),
         )
     }
 

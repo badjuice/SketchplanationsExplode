@@ -62,6 +62,11 @@ class DocumentsTest {
         assertEquals(mapOf("older" to 1, "the-example-effect" to 2), Numbering.ordinals(listOf(sketch, older)))
     }
 
+    @Test fun `raw round-trips offline`() {
+        assertEquals(sketch, Sketches.parse(sketch.raw))
+        assertNull(Sketches.parse("not json"))
+    }
+
     @Test fun `a document without an image is skipped`() {
         val doc = Json.parseToJsonElement("""{"id":"x","uid":"y","data":{"title":"No image"}}""").jsonObject
         assertNull(Documents.sketch(doc))

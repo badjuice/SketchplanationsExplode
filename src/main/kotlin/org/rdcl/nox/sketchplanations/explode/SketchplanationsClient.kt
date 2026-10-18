@@ -74,7 +74,10 @@ public class SketchplanationsClient(
 
     // ---- podcast ----------------------------------------------------------------------------
 
-    public suspend fun podcast(): Podcast = Feed.parse(get(feed, "application/rss+xml, application/xml"))
+    public suspend fun podcast(): Podcast = Feed.parse(podcastFeed())
+
+    /** The raw feed, for storing and re-parsing offline with [PodcastFeed.parse]. */
+    public suspend fun podcastFeed(): ByteArray = get(feed, "application/rss+xml, application/xml")
 
     // ---- plumbing ---------------------------------------------------------------------------
 

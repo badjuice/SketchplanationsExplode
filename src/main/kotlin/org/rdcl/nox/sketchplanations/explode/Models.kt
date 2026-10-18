@@ -29,6 +29,11 @@ public data class Sketch(
     val versions: List<ImageVersion>,
     val podcastUrl: String?,
     val printsUrl: String?,
+    /**
+     * The source document as JSON. Store this rather than the parsed model: [Sketches.parse] turns it
+     * back into a [Sketch] offline, and a newer version of this library can re-read old data.
+     */
+    val raw: String,
 ) {
     /** The author's own sequence number, when the image filename carries one (`…_SP981-…`). Often absent. */
     val imageNumber: Int? get() = image.number
