@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>Example Podcast</title>
+  <copyright>Example Productions</copyright>
+  <itunes:author>Example Author</itunes:author>
+  <itunes:image href="https://example.org/show.jpg"/>
+  <item>
+    <title>The Example Effect</title>
+    <guid isPermaLink="false">guid-1</guid>
+    <link>https://sketchplanations.com/the-example-effect</link>
+    <pubDate>Tue, 02 Jun 2026 04:00:00 GMT</pubDate>
+    <itunes:season>5</itunes:season>
+    <itunes:episode>17</itunes:episode>
+    <itunes:duration>45:30</itunes:duration>
+    <itunes:image href="https://example.org/ep17.jpg"/>
+    <enclosure url="https://example.org/ep17.mp3" length="36769500" type="audio/mpeg"/>
+    <content:encoded><![CDATA[<p>Show notes &amp; more.</p><p>(00:00) Cold open<br>03:15 - The idea<br>1:02:03 Wrap up</p>]]></content:encoded>
+  </item>
+  <item>
+    <title>Another</title>
+    <guid>guid-2</guid>
+    <link>https://example.org/elsewhere</link>
+    <itunes:duration>2400</itunes:duration>
+    <description>No chapters here. 12:00 only one.</description>
+  </item>
+</channel>
+</rss>

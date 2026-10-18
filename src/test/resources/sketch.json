@@ -1,0 +1,38 @@
+{
+  "id": "DocId0001", "uid": "the-example-effect", "type": "sketchplanation",
+  "first_publication_date": "2026-01-02T10:00:00+0000",
+  "last_publication_date": "2026-03-04T12:30:00+0000",
+  "data": {
+    "title": "The Example Effect ",
+    "published_at": "2026-01-04T11:00:00+0000",
+    "image": {
+      "dimensions": {"width": 2000, "height": 1200},
+      "alt": "A made-up sketch used only for tests",
+      "url": "https://images.prismic.io/sketchplanations/abc_SP123-TheExampleEffect.png?auto=compress,format&rect=0,0,2000,1200"
+    },
+    "tags": [{"tag": {"id": "TagA", "type": "tag", "uid": "thinking"}}, {"tag": {"id": "TagB", "type": "tag", "slug": "work"}}],
+    "podcast_link_url": "https://podcast.sketchplanations.com/the-example-effect/",
+    "redbubble_link_url": "",
+    "body": [
+      {"type": "paragraph", "text": "A short italic opener.", "spans": [{"start": 0, "end": 22, "type": "em"}]},
+      {"type": "paragraph", "text": "See the metric version and the cost of things.", "spans": [
+        {"start": 8, "end": 22, "type": "hyperlink", "data": {"link_type": "Web", "url": "https://images.prismic.io/sketchplanations/def_SP123-metric.png"}},
+        {"start": 27, "end": 45, "type": "hyperlink", "data": {"link_type": "Web", "url": "https://geni.us/some-book"}},
+        {"start": 27, "end": 31, "type": "strong"}
+      ]},
+      {"type": "heading2", "text": "Examples", "spans": []},
+      {"type": "list-item", "text": "One", "spans": []},
+      {"type": "list-item", "text": "Two", "spans": []},
+      {"type": "o-list-item", "text": "First", "spans": []},
+      {"type": "preformatted", "text": "1101 = 13", "spans": []},
+      {"type": "paragraph", "text": "Also see Other Idea.", "spans": [
+        {"start": 9, "end": 19, "type": "hyperlink", "data": {"link_type": "Web", "url": "https://sketchplanations.com/other-idea"}}
+      ]},
+      {"type": "heading2", "text": "Related Ideas to The Example Effect", "spans": []},
+      {"type": "list-item", "text": "Third Idea", "spans": [{"start": 0, "end": 10, "type": "hyperlink", "data": {"link_type": "Document", "type": "sketchplanation", "uid": "third-idea"}}]},
+      {"type": "list-item", "text": "Other Idea again", "spans": [{"start": 0, "end": 10, "type": "hyperlink", "data": {"link_type": "Web", "url": "https://www.sketchplanations.com/other-idea"}}]},
+      {"type": "list-item", "text": "The book", "spans": [{"start": 0, "end": 8, "type": "hyperlink", "data": {"link_type": "Web", "url": "https://sketchplanations.com/big-ideas-little-pictures"}}]},
+      {"type": "embed", "text": "", "spans": []}
+    ]
+  }
+}
